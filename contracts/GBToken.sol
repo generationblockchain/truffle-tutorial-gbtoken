@@ -20,7 +20,7 @@ contract GBToken {
     }
     
     /* Send tokens from the message sender's account to the specified account */
-    function send(address receiver, uint amount) public {
+    function sendTokens(address receiver, uint amount) public {
         // if sender does not have enough money
         if (balances[msg.sender] < amount) return;
         
