@@ -10,6 +10,6 @@ module.exports = function(callback) {
 
     GBToken.deployed()
     .then(function(instance){
-        return instance.send(recipientAccount, transferAmount);
+        return instance.sendTokens(recipientAccount, transferAmount);
     });
 }
